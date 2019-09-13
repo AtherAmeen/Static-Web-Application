@@ -1,0 +1,100 @@
+*{padding: 0; margin: 0}
+ul{ margin-bottom: 0 }
+body{padding: 0; margin: 0; font-family: Arial, Helvetica, sans-serif;color: #000000;background: transparent; line-height: 1em; font-size: 100%;}
+span, a, i, ::after, ::before, input{ display: inline-block }
+a{ text-decoration: none }
+img{ max-width: 100%; height: auto;}
+
+main ul.tabs::selection, main ul.tabs > li.tab::selection{ background: none }
+header{
+display:block;
+background: #89b286;
+padding: 30px 0 45px;
+position: relative;
+}
+header::after{
+content: "";
+position: absolute;
+left: 50%;
+transform:translateX(-50%);
+bottom: -33px;
+height: 0px;
+width: 0px;
+border-top: 33px solid #89b286;
+border-left: 35px solid transparent; 
+border-right: 35px solid transparent; 
+}
+header nav { background: #fff; }
+header nav .logo{
+    padding: 14px 0 0; text-align: left
+}
+header nav .icons-div{
+    padding: 24px 0 0; text-align: right    
+}
+header nav .icons-div .icon{ padding: 0 12px 0 0; font-size: 18px }
+header nav .icons-div .icon:last-child{ padding-right: 0 }
+header nav .icons-div .icon:nth-child(1){ color: cornflowerblue}
+header nav .icons-div .icon:nth-child(2){ color: blue}
+header nav .icons-div .icon:nth-child(3){ color: red}
+header nav ul.navigation{ margin: 0}
+header nav ul.navigation > li { display: inline-block; margin: 0; padding: 0;
+ }
+ header nav ul.navigation > li>a::after{
+     content: "";
+     
+    position: absolute; right: 0px; width:1px; height: 15px; background-color: #000000;
+ }
+ header nav ul.navigation > li:last-child>a::after{
+     display: none;
+ }
+header nav ul.navigation > li.active a { color: red}
+header nav ul.navigation > li > a { 
+    position: relative;
+    color: #000000;
+     display: block;
+     font-weight: 600;
+     padding:24px 24px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; text-decoration: none;
+     }
+header .banner-text{ text-align: center}
+header .banner-text h1{ 
+    padding: 37px 0 0px; font-weight: 700;
+    color: #3c403c; font-size: 50px;  font-family: Arial, Helvetica, sans-serif; }
+    header .banner-text h1> span{ font-weight: 500}
+    header .banner-text ul{}
+header .banner-text ul > li{
+    position: relative;
+    display: inline-block;
+    padding: 0 10px 0;
+}
+header .banner-text ul > li::after{
+    content: "";position: absolute;right: 0px; top: 3px ;width: 1px;height: 15px;background: #c9d3b6;
+transform: rotate(15deg);
+}
+header .banner-text ul > li > a{
+    color: #c9d3b6;
+    font-style: italic;
+    font-size: 15px;
+}
+header .banner-text ul > li:last-child::after{
+    display: none;
+}
+/*  main */
+main{ text-align: center;background: #f6f6f6; padding: 120px 0 0 }
+main ul.tabs{
+    margin-bottom: 50px;
+ }
+main ul.tabs > li.tab{ display: inline-block; 
+padding: 7px 20px;background: #222222;
+color: #fff;
+cursor: pointer;
+font-size: 13px;
+ }
+ main ul.tabs > li.active.tab{
+    background:red;
+ }
+main.lightboxes{}
+main .lightboxes .lightbox > div {background: #fff; padding-bottom: 20px; margin-bottom: 30px;}
+main .lightboxes .lightbox > div > img{width: 100%}
+main .lightboxes .lightbox > div > h4{font-size: 20px; margin: 20px 0 0 ; }
+main .lightboxes .lightbox > div > h5{font-size: 9px;color: red;}
+main .lightboxes .lightbox > div > p{font-size: 12px; color: lightgray;max-width:280px;margin:10px auto;}
